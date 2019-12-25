@@ -1,10 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tags on Technical Notes</title>
-		<link>http://example.org/tags/</link>
+		<link>https://winding-lines.github.io/tags/</link>
 		<description>Recent content in Tags on Technical Notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
-		<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Wed, 25 Dec 2019 05:59:28 -0800</lastBuildDate>
+		<atom:link href="https://winding-lines.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

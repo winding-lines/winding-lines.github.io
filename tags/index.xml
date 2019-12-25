@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Tags on Technical Notes</title>
+		<title>Tags on Winding notes</title>
 		<link>https://winding-lines.github.io/tags/</link>
-		<description>Recent content in Tags on Technical Notes</description>
+		<description>Recent content in Tags on Winding notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
 		<lastBuildDate>Wed, 25 Dec 2019 05:59:28 -0800</lastBuildDate>

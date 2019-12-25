@@ -1,24 +1,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Posts on Technical Notes</title>
+		<title>Posts on Winding notes</title>
 		<link>https://winding-lines.github.io/posts/</link>
-		<description>Recent content in Posts on Technical Notes</description>
+		<description>Recent content in Posts on Winding notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
 		<lastBuildDate>Wed, 25 Dec 2019 05:59:28 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		<item>
-			<title>TensorFlow Local Install</title>
+			<title>TensorFlow Install</title>
 			<link>https://winding-lines.github.io/posts/tf-setup/</link>
 			<pubDate>Wed, 25 Dec 2019 05:59:28 -0800</pubDate>
 			<guid isPermaLink="true">https://winding-lines.github.io/posts/tf-setup/</guid>
-			<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+			<description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;This post describes the dependencies and the steps through which
 Tensorflow (TF) gets installed on your development machine. We go in details of the underlying implementation.&lt;/p&gt;
 &lt;p&gt;For an end user you may be better served to use the docker image or &lt;a href=&#34;https://docs.conda.io/en/latest/&#34;&gt;conda&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The instructions to install Tensorflow (TF) are here (instructions)[https://www.tensorflow.org/install].&lt;/p&gt;
-&lt;h2 id=&#34;pip&#34;&gt;pip&lt;/h2&gt;
-&lt;p&gt;In order to install Tensorflow you need to have pip 19 or better, you can see the changes in the &lt;a href=&#34;https://pip.pypa.io/en/stable/news/&#34;&gt;pip changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-pip-ecosystem&#34;&gt;The pip ecosystem&lt;/h2&gt;
+&lt;p&gt;In order to install Tensorflow you need to have pip 19 or better, where pip is a part of the python ecosystem. you can see the changes in the &lt;a href=&#34;https://pip.pypa.io/en/stable/news/&#34;&gt;pip changelog&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;pip-19&#34;&gt;pip 19&lt;/h2&gt;
 &lt;p&gt;It is interesting that TF requires a specific version of pip. Some notable changes in pep 19 are below:&lt;/p&gt;
 &lt;ul&gt;

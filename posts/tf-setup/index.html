@@ -47,25 +47,78 @@
 <p>This post describes the dependencies and the steps through which
 Tensorflow (TF) gets installed on your development machine. We go in details of the underlying implementation.</p>
 <p>For an end user you may be better served to use the docker image or <a href="https://docs.conda.io/en/latest/">conda</a>.</p>
-<p>The instructions to install Tensorflow (TF) are here (instructions)[https://www.tensorflow.org/install].</p>
-<h2 id="the-pip-ecosystem">The pip ecosystem</h2>
-<p>In order to install Tensorflow you need to have pip 19 or better, where pip is a part of the python ecosystem. you can see the changes in the <a href="https://pip.pypa.io/en/stable/news/">pip changelog</a>.</p>
-<h2 id="pip-19">pip 19</h2>
-<p>It is interesting that TF requires a specific version of pip. Some notable changes in pep 19 are below:</p>
+<p>This post will focus on installing for local dev. In order keep your environment clean you should setup and activate a <a href="https://docs.python.org/3/library/venv.html">venv</a>.</p>
+<p>The instructions to install Tensorflow (TF) are here
+<a href="https://www.tensorflow.org/install">instructions</a> and one should run:</p>
+<pre><code>
+$  pip install tensorflow
+
+</code></pre><h2 id="pip">pip</h2>
+<p>The starting point to the Tensorflow installation is (pip)[https://pip.pypa.io/en/stable/], the package manager in the python ecosystem.</p>
+<p>As per the documentation pip is taking the following steps:</p>
+<ol>
+<li>
+<p>Identify the base requirements. The user supplied arguments are processed here.</p>
+</li>
+<li>
+<p>Resolve dependencies. What will be installed is determined here.</p>
+</li>
+<li>
+<p>Build wheels. All the dependencies that can be are built into wheels.</p>
+</li>
+<li>
+<p>Install the packages (and uninstall anything being upgraded/replaced).</p>
+</li>
+</ol>
+<h2 id="wheels">wheels</h2>
+<p>When searching for <code>tensorflow</code> on pypi you will see that the <a href="https://pypi.org/project/tensorflow/#files">download files</a> have the extension <code>whl</code>.
+These are <a href="https://wheel.readthedocs.io/en/stable/">wheel</a> files, zip files with a custom extension and are defined in <a href="https://www.python.org/dev/peps/pep-0427/">PEP-0427</a></p>
+<p>For python 3.7 there are 3 files</p>
 <ul>
-<li>support for <a href="https://www.python.org/dev/peps/pep-0517/">PEP-0517</a></li>
-<li><code>manylinux2010</code> platform tag support which allows binary wheels to be installed on compatible linux libraries</li>
+<li>tensorflow-2.0.0-cp37-cp37m-macosx_10_11_x86_64.whl</li>
+<li>tensorflow-2.0.0-cp37-cp37m-manylinux2010_x86_64.whl</li>
+<li>tensorflow-2.0.0-cp37-cp37m-win_amd64.whl</li>
 </ul>
-<p>It is unclear how these or additional changes are needed for TF setup, the requirement may simply force the usage of a newer verion of pip.</p>
-<h3 id="wheels">wheels</h3>
-<p>Wheels are a zip file withe the extension <code>whl</code> and are defined in <a href="https://www.python.org/dev/peps/pep-0427/">PEP-0427</a></p>
-<h2 id="running-pip">running pip</h2>
-<p>According to the <a href="https://www.tensorflow.org/install">TF install page</a> one should run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pip install tensorflow
-</code></pre></div><p>To keep your local dev environment clean you should setup and activate a <a href="https://docs.python.org/3/library/venv.html">venv</a></p>
-<p>When running <a href="https://pip.pypa.io/en/stable/reference/pip_install/">pip install</a> the following happens:</p>
+<p>The <code>manylinux2010</code>  is platform tag which allows binary wheels to be installed on compatible linux libraries. This is probably the reason why TF requires pip version 19, as per the <a href="https://pip.pypa.io/en/stable/news/">changelog</a> this platform support first appeared in this version.</p>
+<h3 id="structure-of-the-macos-wheel">Structure of the macos wheel</h3>
+<p>The macos wheel contains 4764 files out of which 1513 py files, 2239 header files + 121 C files that need to be compiled. Note that installing a python file from a wheel should not involve the build system at all so it's not clear what the C files are for.</p>
+<p>These files are split amongst the following top-level folders:</p>
 <ul>
-<li>TODO</li>
+<li>tensorflow: just an __init__.py to load the actual code</li>
+<li>tensorflow_core: most of the python and pre-compiled libraries</li>
+<li>tensorflow-2.0.0.data:</li>
+<li>tensorflow-2.0.0.dist-info: metadata required by the wheel</li>
+</ul>
+<p>The wheel contains the following pre-compiled libraries:</p>
+<ul>
+<li>tensorflow_core/python/_pywrap_tensorflow_internal.so, biggest file at 32MB</li>
+<li>tensorflow_core/compiler/tf2tensorrt/_wrap_py_utils.so</li>
+<li>tensorflow_core/compiler/tf2xla/ops/_xla_ops.so</li>
+<li>tensorflow_core/lite/experimental/microfrontend/python/ops/_audio_microfrontend_op.so</li>
+<li>tensorflow_core/lite/python/interpreter_wrapper/_tensorflow_wrap_interpreter_wrapper.so</li>
+<li>tensorflow_core/lite/python/optimize/_tensorflow_lite_wrap_calibration_wrapper.so</li>
+<li>tensorflow_core/python/framework/fast_tensor_util.so</li>
+</ul>
+<p>It has the following outside dependencies:</p>
+<ul>
+<li>absl-py (&gt;=0.7.0)</li>
+<li>astor (&gt;=0.6.0)</li>
+<li>gast (==0.2.2)</li>
+<li>google-pasta (&gt;=0.1.6)</li>
+<li>keras-applications (&gt;=1.0.8)</li>
+<li>keras-preprocessing (&gt;=1.0.5)</li>
+<li>numpy (&lt;2.0,&gt;=1.16.0)</li>
+<li>opt-einsum (&gt;=2.3.2)</li>
+<li>six (&gt;=1.10.0)</li>
+<li>protobuf (&gt;=3.6.1)</li>
+<li>tensorboard (&lt;2.1.0,&gt;=2.0.0)</li>
+<li>tensorflow-estimator (&lt;2.1.0,&gt;=2.0.0)</li>
+<li>termcolor (&gt;=1.1.0)</li>
+<li>wrapt (&gt;=1.11.1)</li>
+<li>grpcio (&gt;=1.8.6)</li>
+<li>wheel (&gt;=0.26)</li>
+<li>backports.weakref (&gt;=1.0rc1); python_version &lt; &ldquo;3.4&rdquo;</li>
+<li>enum34 (&gt;=1.1.6); python_version &lt; &ldquo;3.4&rdquo;</li>
 </ul>
 
   </div>

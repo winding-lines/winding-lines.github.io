@@ -1,11 +1,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Tags on Winding notes</title>
+		<title>Tags on Winding Notes</title>
 		<link>https://winding-lines.github.io/tags/</link>
-		<description>Recent content in Tags on Winding notes</description>
+		<description>Recent content in Tags on Winding Notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 25 Dec 2019 05:59:28 -0800</lastBuildDate>
+		<lastBuildDate>Thu, 26 Dec 2019 05:54:33 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>python</title>
+			<link>https://winding-lines.github.io/tags/python/</link>
+			<pubDate>Thu, 26 Dec 2019 05:54:33 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/tags/python/</guid>
+			<description></description>
+		</item>
+		<item>
+			<title>ai</title>
+			<link>https://winding-lines.github.io/tags/ai/</link>
+			<pubDate>Wed, 25 Dec 2019 20:09:36 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/tags/ai/</guid>
+			<description></description>
+		</item>
 	</channel>
 </rss>

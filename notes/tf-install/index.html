@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <title>TensorFlow Install | Winding Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Unpack the TF installation steps" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.62.0" />
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Winding Notes Feed" />
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/style-compat.3b4c1c0e1409a3519991e0e9c30ec8480a88f23885a0beb2a2ca30ece5c7d42c.css" />
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/style.6bf00dd6076f8be858bee3ba1ac6937e5e78a15eb5a11f6822a6e9199d270703.css" />
+  <!--<![endif]-->
+  <script defer src="/script.9df38729991a6ec08d83b60514e841529cebd5ccc800cf8e1f98fb63e73aaa73.js"></script>
+</head>
+<body>
+<div class="pure-g">
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-u-22-24 pure-u-md-14-24">
+  
+<div class="navigation">
+  <div class="navigation-header clearfix">
+    <div class="pure-menu pure-menu-horizontal">
+      <a class="pure-menu-heading pure-menu-link" href="/">
+        Winding Notes
+      </a>
+    </div>
+  </div>
+</div>
+
+  
+<div>
+  <div>
+    <h2 class="post-title">
+      
+      TensorFlow Install
+    </h2>
+    
+
+  </div>
+  <div>
+    <p>Dependencies and steps through which Tensorflow (TF) gets installed on your development machine.</p>
+<h2 id="intro">Intro</h2>
+<p>As of Dec 2019, the instructions to install Tensorflow (TF) are here
+<a href="https://www.tensorflow.org/install">instructions</a> and one should run:</p>
+<pre><code>$  pip install tensorflow
+</code></pre><p>To learn more about pip see the (pip note)[https://winding-lines.github.io/notes/pip/,</p>
+<h2 id="wheels">wheels</h2>
+<p>For python 3.7 TF is provided through 3 <a href="https://pypi.org/project/tensorflow/#files">files</a>, one per operating system:</p>
+<ul>
+<li>tensorflow-2.0.0-cp37-cp37m-macosx_10_11_x86_64.whl</li>
+<li>tensorflow-2.0.0-cp37-cp37m-manylinux2010_x86_64.whl</li>
+<li>tensorflow-2.0.0-cp37-cp37m-win_amd64.whl</li>
+</ul>
+<p>The <code>manylinux2010</code>  is platform tag which allows binary wheels to be installed on compatible linux libraries. This is probably the reason why TF requires pip version 19, as per the <a href="https://pip.pypa.io/en/stable/news/">changelog</a> this platform support first appeared in this version.</p>
+<h3 id="structure-of-the-macos-wheel">Structure of the macos wheel</h3>
+<p>The macos wheel contains the following files:</p>
+
+
+
+
+    </tr>
+<table>
+    <tr>
+        <th>Ext</th>
+        <th>Files</th>
+        <th>Largest file</th>
+        <th>Size [kB]</th>
+    </tr>
+  
+  <tr>
+    <td> 
+        .py
+    </td>
+    <td style="text-align: left;">
+        1510
+    </td>
+    <td>
+        tensorflow_core/python/ops/gen_nn_ops.py
+    </td>
+    <td style="text-align: right;">
+        738.56
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .h
+    </td>
+    <td style="text-align: left;">
+        2219
+    </td>
+    <td>
+        tensorflow_core/include/Eigen/src/misc/lapacke.h
+    </td>
+    <td style="text-align: right;">
+        1033.56
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .dylib
+    </td>
+    <td style="text-align: left;">
+        3
+    </td>
+    <td>
+        tensorflow_core/libtensorflow_framework.2.0.0.dylib
+    </td>
+    <td style="text-align: right;">
+        27937.71
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .so
+    </td>
+    <td style="text-align: left;">
+        7
+    </td>
+    <td>
+        tensorflow_core/python/_pywrap_tensorflow_internal.so
+    </td>
+    <td style="text-align: right;">
+        321594.8
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .inc
+    </td>
+    <td style="text-align: left;">
+        25
+    </td>
+    <td>
+        tensorflow_core/include/google/protobuf/test_util.inc
+    </td>
+    <td style="text-align: right;">
+        123.58
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .c
+    </td>
+    <td style="text-align: left;">
+        75
+    </td>
+    <td>
+        tensorflow_core/include/external/boringssl/src/third_party/fiat/p256.c
+    </td>
+    <td style="text-align: right;">
+        80.71
+    </td>
+  </tr>
+
+</table>
+
+
+<p>These files are split amongst the following top-level folders:</p>
+<ul>
+<li>tensorflow: just an __init__.py to load the actual code</li>
+<li>tensorflow_core: most of the python and pre-compiled libraries</li>
+<li>tensorflow-2.0.0.data:</li>
+<li>tensorflow-2.0.0.dist-info: metadata required by the wheel</li>
+</ul>
+<p>The wheel contains the following pre-compiled libraries:</p>
+<ul>
+<li>tensorflow_core/python/_pywrap_tensorflow_internal.so, biggest file at 32MB</li>
+<li>tensorflow_core/libtensorflow_framework.dylib</li>
+<li>tensorflow_core/compiler/tf2tensorrt/_wrap_py_utils.so</li>
+<li>tensorflow_core/compiler/tf2xla/ops/_xla_ops.so</li>
+<li>tensorflow_core/lite/experimental/microfrontend/python/ops/_audio_microfrontend_op.so</li>
+<li>tensorflow_core/lite/python/interpreter_wrapper/_tensorflow_wrap_interpreter_wrapper.so</li>
+<li>tensorflow_core/lite/python/optimize/_tensorflow_lite_wrap_calibration_wrapper.so</li>
+<li>tensorflow_core/python/framework/fast_tensor_util.so</li>
+</ul>
+<p>It has the following outside dependencies:</p>
+<ul>
+<li>absl-py (&gt;=0.7.0)</li>
+<li>astor (&gt;=0.6.0)</li>
+<li>gast (==0.2.2)</li>
+<li>google-pasta (&gt;=0.1.6)</li>
+<li>keras-applications (&gt;=1.0.8)</li>
+<li>keras-preprocessing (&gt;=1.0.5)</li>
+<li>numpy (&lt;2.0,&gt;=1.16.0)</li>
+<li>opt-einsum (&gt;=2.3.2): optimize einsum chains</li>
+<li>six (&gt;=1.10.0)</li>
+<li>protobuf (&gt;=3.6.1)</li>
+<li>tensorboard (&lt;2.1.0,&gt;=2.0.0)</li>
+<li>tensorflow-estimator (&lt;2.1.0,&gt;=2.0.0)</li>
+<li>termcolor (&gt;=1.1.0)</li>
+<li>wrapt (&gt;=1.11.1)</li>
+<li>grpcio (&gt;=1.8.6)</li>
+<li>wheel (&gt;=0.26)</li>
+<li>backports.weakref (&gt;=1.0rc1); python_version &lt; &ldquo;3.4&rdquo;</li>
+<li>enum34 (&gt;=1.1.6); python_version &lt; &ldquo;3.4&rdquo;</li>
+</ul>
+  </div>
+</div>
+  <div class="footer">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item" title="RSS Feed">
+        <a href="/index.xml" class="pure-menu-link">RSS</a>
+      </li>
+      <li class="pure-menu-item fix-cursor-pointer" title="Go to top">
+        <a class="pure-menu-link" id="btn-gototop">
+          <span class="fix-placement-up">&#x21e7;&#xfe0e;</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+</body>
+</html>

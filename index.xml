@@ -1,30 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Winding notes</title>
+		<title>Winding Notes</title>
 		<link>https://winding-lines.github.io/</link>
-		<description>Recent content on Winding notes</description>
+		<description>Recent content on Winding Notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 25 Dec 2019 05:59:28 -0800</lastBuildDate>
+		<lastBuildDate>Thu, 26 Dec 2019 05:54:33 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/index.xml" rel="self" type="application/rss+xml" />
 		<item>
-			<title>TensorFlow Install</title>
-			<link>https://winding-lines.github.io/posts/tf-setup/</link>
-			<pubDate>Wed, 25 Dec 2019 05:59:28 -0800</pubDate>
-			<guid isPermaLink="true">https://winding-lines.github.io/posts/tf-setup/</guid>
-			<description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;This post describes the dependencies and the steps through which
-Tensorflow (TF) gets installed on your development machine. We go in details of the underlying implementation.&lt;/p&gt;
-&lt;p&gt;For an end user you may be better served to use the docker image or &lt;a href=&#34;https://docs.conda.io/en/latest/&#34;&gt;conda&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This post will focus on installing for local dev. In order keep your environment clean you should setup and activate a &lt;a href=&#34;https://docs.python.org/3/library/venv.html&#34;&gt;venv&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The instructions to install Tensorflow (TF) are here
-&lt;a href=&#34;https://www.tensorflow.org/install&#34;&gt;instructions&lt;/a&gt; and one should run:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-$  pip install tensorflow
-
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;pip&#34;&gt;pip&lt;/h2&gt;
-&lt;p&gt;The starting point to the Tensorflow installation is (pip)[https://pip.pypa.io/en/stable/], the package manager in the python ecosystem.&lt;/p&gt;
-&lt;p&gt;As per the documentation pip is taking the following steps:&lt;/p&gt;
+			<title>Python Packages</title>
+			<link>https://winding-lines.github.io/notes/pip/</link>
+			<pubDate>Thu, 26 Dec 2019 05:54:33 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/pip/</guid>
+			<description>&lt;p&gt;The package manager in the python ecosystem is pip.&lt;/p&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;As per the (documentation)[https://pip.pypa.io/en/stable/] pip is taking the following steps:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Identify the base requirements. The user supplied arguments are processed here.&lt;/p&gt;
@@ -39,10 +29,182 @@ $  pip install tensorflow
 &lt;p&gt;Install the packages (and uninstall anything being upgraded/replaced).&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;isolated-installs&#34;&gt;Isolated installs&lt;/h2&gt;
+&lt;p&gt;In order keep your environment clean you should setup and activate a &lt;a href=&#34;https://docs.python.org/3/library/venv.html&#34;&gt;venv&lt;/a&gt;. By using a venv you do not change the globally installed versions of packages. Pip will still use the global pip cache so you minimize the amount of wasted disk space by having multiple installs.&lt;/p&gt;
+&lt;h2 id=&#34;alternatives&#34;&gt;Alternatives&lt;/h2&gt;
+&lt;p&gt;Complex packages like as ML frameworks have a lot of dependencies. In some cases it may be simpler to use a docker image, if provided by the developers, or &lt;a href=&#34;https://docs.conda.io/en/latest/&#34;&gt;conda&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;wheels&#34;&gt;Wheels&lt;/h2&gt;
+&lt;p&gt;When searching for &lt;code&gt;tensorflow&lt;/code&gt; on pypi you will see that the  have the extension &lt;code&gt;whl&lt;/code&gt;.
+These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;&lt;/p&gt;</description>
+		</item>
+		<item>
+			<title>Pytorch Install</title>
+			<link>https://winding-lines.github.io/notes/pytorch-install/</link>
+			<pubDate>Wed, 25 Dec 2019 20:09:36 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/pytorch-install/</guid>
+			<description>&lt;p&gt;Dependencies and steps through which Pytorch gets installed on your development machine.&lt;/p&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;As of Dec 2019, the instructions to install Pytorch are here
+&lt;a href=&#34;https://pytorch.org/get-started/locally/&#34;&gt;instructions&lt;/a&gt; and one options is to run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$  pip install torch torchvision
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To learn more about pip see the &lt;a href=&#34;https://winding-lines.github.io/notes/pip/&#34;&gt;pip note&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;wheels-for-torch&#34;&gt;wheels for torch&lt;/h2&gt;
+&lt;p&gt;For python 3.7 Pytorch is provided through 2 &lt;a href=&#34;https://pypi.org/project/tensorflow/#files&#34;&gt;files&lt;/a&gt;, one per operating system:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;torch-1.3.1-cp37-cp37m-manylinux1_x86_64.whl&lt;/li&gt;
+&lt;li&gt;torch-1.3.1-cp37-none-macosx_10_7_x86_64.whl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As opposed to TF there is no support wheel for windows.&lt;/p&gt;
+&lt;h3 id=&#34;file-summary&#34;&gt;File summary&lt;/h3&gt;
+&lt;p&gt;This is a summary of the files in the macos wheel.&lt;/p&gt;
+
+
+
+
+    &lt;/tr&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Ext&lt;/th&gt;
+        &lt;th&gt;Files&lt;/th&gt;
+        &lt;th&gt;Largest file&lt;/th&gt;
+        &lt;th&gt;Size [kB]&lt;/th&gt;
+    &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .py
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        881
+    &lt;/td&gt;
+    &lt;td&gt;
+        torch/_torch_docs.py
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        222.09
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .dylib
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        9
+    &lt;/td&gt;
+    &lt;td&gt;
+        torch/lib/libtorch.dylib
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        191035.35
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .so
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        3
+    &lt;/td&gt;
+    &lt;td&gt;
+        caffe2/python/caffe2_pybind11_state.cpython-37m-darwin.so
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        2094.53
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .pyi
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        46
+    &lt;/td&gt;
+    &lt;td&gt;
+        torch/__init__.pyi
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        113.13
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .h
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        1092
+    &lt;/td&gt;
+    &lt;td&gt;
+        torch/include/ATen/Functions.h
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        960.79
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .cuh
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        6
+    &lt;/td&gt;
+    &lt;td&gt;
+        torch/include/ATen/cuda/CUDAApplyUtils.cuh
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        49.27
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .hpp
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        5
+    &lt;/td&gt;
+    &lt;td&gt;
+        torch/include/TH/THTensor.hpp
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        5.01
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .cmake
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        29
+    &lt;/td&gt;
+    &lt;td&gt;
+        torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        86.06
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+&lt;/table&gt;</description>
+		</item>
+		<item>
+			<title>TensorFlow Install</title>
+			<link>https://winding-lines.github.io/notes/tf-install/</link>
+			<pubDate>Wed, 25 Dec 2019 05:59:28 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/tf-install/</guid>
+			<description>&lt;p&gt;Dependencies and steps through which Tensorflow (TF) gets installed on your development machine.&lt;/p&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;As of Dec 2019, the instructions to install Tensorflow (TF) are here
+&lt;a href=&#34;https://www.tensorflow.org/install&#34;&gt;instructions&lt;/a&gt; and one should run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$  pip install tensorflow
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To learn more about pip see the (pip note)[https://winding-lines.github.io/notes/pip/,&lt;/p&gt;
 &lt;h2 id=&#34;wheels&#34;&gt;wheels&lt;/h2&gt;
-&lt;p&gt;When searching for &lt;code&gt;tensorflow&lt;/code&gt; on pypi you will see that the &lt;a href=&#34;https://pypi.org/project/tensorflow/#files&#34;&gt;download files&lt;/a&gt; have the extension &lt;code&gt;whl&lt;/code&gt;.
-These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For python 3.7 there are 3 files&lt;/p&gt;
+&lt;p&gt;For python 3.7 TF is provided through 3 &lt;a href=&#34;https://pypi.org/project/tensorflow/#files&#34;&gt;files&lt;/a&gt;, one per operating system:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;tensorflow-2.0.0-cp37-cp37m-macosx_10_11_x86_64.whl&lt;/li&gt;
 &lt;li&gt;tensorflow-2.0.0-cp37-cp37m-manylinux2010_x86_64.whl&lt;/li&gt;
@@ -50,7 +212,113 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;/ul&gt;
 &lt;p&gt;The &lt;code&gt;manylinux2010&lt;/code&gt;  is platform tag which allows binary wheels to be installed on compatible linux libraries. This is probably the reason why TF requires pip version 19, as per the &lt;a href=&#34;https://pip.pypa.io/en/stable/news/&#34;&gt;changelog&lt;/a&gt; this platform support first appeared in this version.&lt;/p&gt;
 &lt;h3 id=&#34;structure-of-the-macos-wheel&#34;&gt;Structure of the macos wheel&lt;/h3&gt;
-&lt;p&gt;The macos wheel contains 4764 files out of which 1513 py files, 2239 header files + 121 C files that need to be compiled. Note that installing a python file from a wheel should not involve the build system at all so it&#39;s not clear what the C files are for.&lt;/p&gt;
+&lt;p&gt;The macos wheel contains the following files:&lt;/p&gt;
+
+
+
+
+    &lt;/tr&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Ext&lt;/th&gt;
+        &lt;th&gt;Files&lt;/th&gt;
+        &lt;th&gt;Largest file&lt;/th&gt;
+        &lt;th&gt;Size [kB]&lt;/th&gt;
+    &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .py
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        1510
+    &lt;/td&gt;
+    &lt;td&gt;
+        tensorflow_core/python/ops/gen_nn_ops.py
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        738.56
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .h
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        2219
+    &lt;/td&gt;
+    &lt;td&gt;
+        tensorflow_core/include/Eigen/src/misc/lapacke.h
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        1033.56
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .dylib
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        3
+    &lt;/td&gt;
+    &lt;td&gt;
+        tensorflow_core/libtensorflow_framework.2.0.0.dylib
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        27937.71
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .so
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        7
+    &lt;/td&gt;
+    &lt;td&gt;
+        tensorflow_core/python/_pywrap_tensorflow_internal.so
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        321594.8
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .inc
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        25
+    &lt;/td&gt;
+    &lt;td&gt;
+        tensorflow_core/include/google/protobuf/test_util.inc
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        123.58
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt; 
+        .c
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: left;&#34;&gt;
+        75
+    &lt;/td&gt;
+    &lt;td&gt;
+        tensorflow_core/include/external/boringssl/src/third_party/fiat/p256.c
+    &lt;/td&gt;
+    &lt;td style=&#34;text-align: right;&#34;&gt;
+        80.71
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+&lt;/table&gt;
+
+
 &lt;p&gt;These files are split amongst the following top-level folders:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;tensorflow: just an __init__.py to load the actual code&lt;/li&gt;
@@ -61,6 +329,7 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;p&gt;The wheel contains the following pre-compiled libraries:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;tensorflow_core/python/_pywrap_tensorflow_internal.so, biggest file at 32MB&lt;/li&gt;
+&lt;li&gt;tensorflow_core/libtensorflow_framework.dylib&lt;/li&gt;
 &lt;li&gt;tensorflow_core/compiler/tf2tensorrt/_wrap_py_utils.so&lt;/li&gt;
 &lt;li&gt;tensorflow_core/compiler/tf2xla/ops/_xla_ops.so&lt;/li&gt;
 &lt;li&gt;tensorflow_core/lite/experimental/microfrontend/python/ops/_audio_microfrontend_op.so&lt;/li&gt;
@@ -77,7 +346,7 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;li&gt;keras-applications (&amp;gt;=1.0.8)&lt;/li&gt;
 &lt;li&gt;keras-preprocessing (&amp;gt;=1.0.5)&lt;/li&gt;
 &lt;li&gt;numpy (&amp;lt;2.0,&amp;gt;=1.16.0)&lt;/li&gt;
-&lt;li&gt;opt-einsum (&amp;gt;=2.3.2)&lt;/li&gt;
+&lt;li&gt;opt-einsum (&amp;gt;=2.3.2): optimize einsum chains&lt;/li&gt;
 &lt;li&gt;six (&amp;gt;=1.10.0)&lt;/li&gt;
 &lt;li&gt;protobuf (&amp;gt;=3.6.1)&lt;/li&gt;
 &lt;li&gt;tensorboard (&amp;lt;2.1.0,&amp;gt;=2.0.0)&lt;/li&gt;
@@ -88,8 +357,7 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;li&gt;wheel (&amp;gt;=0.26)&lt;/li&gt;
 &lt;li&gt;backports.weakref (&amp;gt;=1.0rc1); python_version &amp;lt; &amp;ldquo;3.4&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;enum34 (&amp;gt;=1.1.6); python_version &amp;lt; &amp;ldquo;3.4&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
 		</item>
 	</channel>
 </rss>

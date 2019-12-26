@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <title>Pytorch Install | Winding Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Dependencies and steps through which Pytorch gets installed on your development machine." />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.62.0" />
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Winding Notes Feed" />
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/style-compat.3b4c1c0e1409a3519991e0e9c30ec8480a88f23885a0beb2a2ca30ece5c7d42c.css" />
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/style.6bf00dd6076f8be858bee3ba1ac6937e5e78a15eb5a11f6822a6e9199d270703.css" />
+  <!--<![endif]-->
+  <script defer src="/script.9df38729991a6ec08d83b60514e841529cebd5ccc800cf8e1f98fb63e73aaa73.js"></script>
+</head>
+<body>
+<div class="pure-g">
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-u-22-24 pure-u-md-14-24">
+  
+<div class="navigation">
+  <div class="navigation-header clearfix">
+    <div class="pure-menu pure-menu-horizontal">
+      <a class="pure-menu-heading pure-menu-link" href="/">
+        Winding Notes
+      </a>
+    </div>
+  </div>
+</div>
+
+  
+<div>
+  <div>
+    <h2 class="post-title">
+      
+      Pytorch Install
+    </h2>
+    
+
+  </div>
+  <div>
+    <p>Dependencies and steps through which Pytorch gets installed on your development machine.</p>
+<h2 id="intro">Intro</h2>
+<p>As of Dec 2019, the instructions to install Pytorch are here
+<a href="https://pytorch.org/get-started/locally/">instructions</a> and one options is to run:</p>
+<pre><code>$  pip install torch torchvision
+</code></pre><p>To learn more about pip see the <a href="https://winding-lines.github.io/notes/pip/">pip note</a>.</p>
+<h2 id="wheels-for-torch">wheels for torch</h2>
+<p>For python 3.7 Pytorch is provided through 2 <a href="https://pypi.org/project/tensorflow/#files">files</a>, one per operating system:</p>
+<ul>
+<li>torch-1.3.1-cp37-cp37m-manylinux1_x86_64.whl</li>
+<li>torch-1.3.1-cp37-none-macosx_10_7_x86_64.whl</li>
+</ul>
+<p>As opposed to TF there is no support wheel for windows.</p>
+<h3 id="file-summary">File summary</h3>
+<p>This is a summary of the files in the macos wheel.</p>
+
+
+
+
+    </tr>
+<table>
+    <tr>
+        <th>Ext</th>
+        <th>Files</th>
+        <th>Largest file</th>
+        <th>Size [kB]</th>
+    </tr>
+  
+  <tr>
+    <td> 
+        .py
+    </td>
+    <td style="text-align: left;">
+        881
+    </td>
+    <td>
+        torch/_torch_docs.py
+    </td>
+    <td style="text-align: right;">
+        222.09
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .dylib
+    </td>
+    <td style="text-align: left;">
+        9
+    </td>
+    <td>
+        torch/lib/libtorch.dylib
+    </td>
+    <td style="text-align: right;">
+        191035.35
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .so
+    </td>
+    <td style="text-align: left;">
+        3
+    </td>
+    <td>
+        caffe2/python/caffe2_pybind11_state.cpython-37m-darwin.so
+    </td>
+    <td style="text-align: right;">
+        2094.53
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .pyi
+    </td>
+    <td style="text-align: left;">
+        46
+    </td>
+    <td>
+        torch/__init__.pyi
+    </td>
+    <td style="text-align: right;">
+        113.13
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .h
+    </td>
+    <td style="text-align: left;">
+        1092
+    </td>
+    <td>
+        torch/include/ATen/Functions.h
+    </td>
+    <td style="text-align: right;">
+        960.79
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .cuh
+    </td>
+    <td style="text-align: left;">
+        6
+    </td>
+    <td>
+        torch/include/ATen/cuda/CUDAApplyUtils.cuh
+    </td>
+    <td style="text-align: right;">
+        49.27
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .hpp
+    </td>
+    <td style="text-align: left;">
+        5
+    </td>
+    <td>
+        torch/include/TH/THTensor.hpp
+    </td>
+    <td style="text-align: right;">
+        5.01
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+        .cmake
+    </td>
+    <td style="text-align: left;">
+        29
+    </td>
+    <td>
+        torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake
+    </td>
+    <td style="text-align: right;">
+        86.06
+    </td>
+  </tr>
+
+</table>
+  </div>
+</div>
+  <div class="footer">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item" title="RSS Feed">
+        <a href="/index.xml" class="pure-menu-link">RSS</a>
+      </li>
+      <li class="pure-menu-item fix-cursor-pointer" title="Go to top">
+        <a class="pure-menu-link" id="btn-gototop">
+          <span class="fix-placement-up">&#x21e7;&#xfe0e;</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+</body>
+</html>

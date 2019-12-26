@@ -2,10 +2,10 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8" />
-  <title>404 Page not found | Winding Notes</title>
+  <title>Python Packages | Winding Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="" />
+  <meta name="description" content="The package manager in the python ecosystem is pip." />
   <meta name="author" content="" />
   <meta name="generator" content="Hugo 0.62.0" />
   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Winding Notes Feed" />
@@ -35,10 +35,38 @@
   
 <div>
   <div>
-    <h2 class="post-title">404 Page not found</h2>
+    <h2 class="post-title">
+      
+      Python Packages
+    </h2>
+    
+
   </div>
   <div>
-    <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+    <p>The package manager in the python ecosystem is pip.</p>
+<h2 id="intro">Intro</h2>
+<p>As per the (documentation)[https://pip.pypa.io/en/stable/] pip is taking the following steps:</p>
+<ol>
+<li>
+<p>Identify the base requirements. The user supplied arguments are processed here.</p>
+</li>
+<li>
+<p>Resolve dependencies. What will be installed is determined here.</p>
+</li>
+<li>
+<p>Build wheels. All the dependencies that can be are built into wheels.</p>
+</li>
+<li>
+<p>Install the packages (and uninstall anything being upgraded/replaced).</p>
+</li>
+</ol>
+<h2 id="isolated-installs">Isolated installs</h2>
+<p>In order keep your environment clean you should setup and activate a <a href="https://docs.python.org/3/library/venv.html">venv</a>. By using a venv you do not change the globally installed versions of packages. Pip will still use the global pip cache so you minimize the amount of wasted disk space by having multiple installs.</p>
+<h2 id="alternatives">Alternatives</h2>
+<p>Complex packages like as ML frameworks have a lot of dependencies. In some cases it may be simpler to use a docker image, if provided by the developers, or <a href="https://docs.conda.io/en/latest/">conda</a>.</p>
+<h2 id="wheels">Wheels</h2>
+<p>When searching for <code>tensorflow</code> on pypi you will see that the  have the extension <code>whl</code>.
+These are <a href="https://wheel.readthedocs.io/en/stable/">wheel</a> files, zip files with a custom extension and are defined in <a href="https://www.python.org/dev/peps/pep-0427/">PEP-0427</a></p>
   </div>
 </div>
   <div class="footer">

@@ -2,14 +2,13 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8" />
-  <title>Categories | Winding Notes</title>
+  <title>Argoverse | Winding Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="" />
+  <meta name="description" content="These are notes from the Argoverse competition with the goal of providing curated datasets and high-definition (HD) maps designed to support advancements in computer vision and machine learning." />
   <meta name="author" content="" />
   <meta name="generator" content="Hugo 0.62.0" />
   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Winding Notes Feed" />
-  <link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="Winding Notes Categories Feed" />
   <!--[if lte IE 8]>
   <link rel="stylesheet" href="/style-compat.3b4c1c0e1409a3519991e0e9c30ec8480a88f23885a0beb2a2ca30ece5c7d42c.css" />
   <![endif]-->
@@ -35,14 +34,28 @@
 
   
 <div>
-  <p>Categories:</p>
-  <ul>
+  <div>
+    <h2 class="post-title">
       
-    <li>
-      <a href="/categories/general/" title="General">General</a>
-      <span>&#40;4&#41;</span>
-    </li>
-  </ul>
+      Argoverse
+    </h2>
+    
+
+  </div>
+  <div>
+    <p>These are notes from the Argoverse competition with the goal of providing curated datasets and high-definition (HD) maps designed to support advancements in computer vision and machine learning.</p>
+<p>The main site is here <a href="https://www.argoverse.org">Argoverse</a>.</p>
+<h2 id="baseline">Baseline</h2>
+<p>The <a href="https://github.com/jagjeet-singh/argoverse-forecasting">baseline repo</a> is a good starting point.</p>
+<h2 id="evaluation-metrics">Evaluation metrics</h2>
+<p>The <a href="https://github.com/jagjeet-singh/argoverse-forecasting/blob/master/eval_forecasting_helper.py">eval_forecasting_helper</a> generates the following metrics using <a href="https://github.com/argoai/argoverse-api/blob/87c5e3f2d2eb039052e142d5e30bb7d6caeb6252/argoverse/evaluation/eval_forecasting.py#L136">argoverse-api/&hellip;/eval_forecasting.py</a></p>
+<ul>
+<li>mean_min_ade: Mean of min average displacement error for all the trajectories.</li>
+<li>mean_min_fde: Mean of min final displacement error for all the trajectories.</li>
+<li>mean_dac: Mean drivable area compliance for all the trajectories.</li>
+<li>miss_rate: Miss rate.</li>
+</ul>
+  </div>
 </div>
   <div class="footer">
   <div class="pure-menu pure-menu-horizontal">

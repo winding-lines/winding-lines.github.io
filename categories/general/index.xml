@@ -5,8 +5,26 @@
 		<description>Recent content in General on Winding Notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Thu, 26 Dec 2019 05:54:33 -0800</lastBuildDate>
+		<lastBuildDate>Sat, 28 Dec 2019 06:51:08 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Argoverse</title>
+			<link>https://winding-lines.github.io/notes/argoverse/</link>
+			<pubDate>Sat, 28 Dec 2019 06:51:08 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/argoverse/</guid>
+			<description>&lt;p&gt;These are notes from the Argoverse competition with the goal of providing curated datasets and high-definition (HD) maps designed to support advancements in computer vision and machine learning.&lt;/p&gt;
+&lt;p&gt;The main site is here &lt;a href=&#34;https://www.argoverse.org&#34;&gt;Argoverse&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;baseline&#34;&gt;Baseline&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/jagjeet-singh/argoverse-forecasting&#34;&gt;baseline repo&lt;/a&gt; is a good starting point.&lt;/p&gt;
+&lt;h2 id=&#34;evaluation-metrics&#34;&gt;Evaluation metrics&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/jagjeet-singh/argoverse-forecasting/blob/master/eval_forecasting_helper.py&#34;&gt;eval_forecasting_helper&lt;/a&gt; generates the following metrics using &lt;a href=&#34;https://github.com/argoai/argoverse-api/blob/87c5e3f2d2eb039052e142d5e30bb7d6caeb6252/argoverse/evaluation/eval_forecasting.py#L136&#34;&gt;argoverse-api/&amp;hellip;/eval_forecasting.py&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mean_min_ade: Mean of min average displacement error for all the trajectories.&lt;/li&gt;
+&lt;li&gt;mean_min_fde: Mean of min final displacement error for all the trajectories.&lt;/li&gt;
+&lt;li&gt;mean_dac: Mean drivable area compliance for all the trajectories.&lt;/li&gt;
+&lt;li&gt;miss_rate: Miss rate.&lt;/li&gt;
+&lt;/ul&gt;</description>
+		</item>
 		<item>
 			<title>Python Packages</title>
 			<link>https://winding-lines.github.io/notes/pip/</link>
@@ -14,7 +32,8 @@
 			<guid isPermaLink="true">https://winding-lines.github.io/notes/pip/</guid>
 			<description>&lt;p&gt;The package manager in the python ecosystem is pip.&lt;/p&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;As per the (documentation)[https://pip.pypa.io/en/stable/] pip is taking the following steps:&lt;/p&gt;
+&lt;p&gt;For an overview of installing packages in python head over to the &lt;a href=&#34;https://packaging.python.org/tutorials/installing-packages&#34;&gt;tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As per the &lt;a href=&#34;https://pip.pypa.io/en/stable/&#34;&gt;documentation&lt;/a&gt; pip is taking the following steps:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Identify the base requirements. The user supplied arguments are processed here.&lt;/p&gt;

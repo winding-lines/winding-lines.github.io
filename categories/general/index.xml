@@ -61,7 +61,13 @@ commits from 35 contributors over its 4 years of existence. Note that according 
 &lt;p&gt;Complex packages like as ML frameworks have a lot of dependencies. In some cases it may be simpler to use a docker image, if provided by the developers, or &lt;a href=&#34;https://docs.conda.io/en/latest/&#34;&gt;conda&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;wheels&#34;&gt;Wheels&lt;/h2&gt;
 &lt;p&gt;When searching for &lt;code&gt;tensorflow&lt;/code&gt; on pypi you will see that the  have the extension &lt;code&gt;whl&lt;/code&gt;.
-These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;&lt;/p&gt;</description>
+These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;binary-dependencies&#34;&gt;Binary dependencies&lt;/h2&gt;
+&lt;p&gt;Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/library/ctypes.html&#34;&gt;ctypes&lt;/a&gt; - loads shared libraries using the Foreing Function Interface (FFI)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cython.org/&#34;&gt;cython&lt;/a&gt; -  optimising static compiler for both the Python programming language and the extended Cython programming language.&lt;/li&gt;
+&lt;/ul&gt;</description>
 		</item>
 		<item>
 			<title>Pytorch Install</title>

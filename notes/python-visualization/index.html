@@ -2,10 +2,10 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8" />
-  <title>Winding Notes</title>
+  <title>Python Visualization | Winding Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="" />
+  <meta name="description" content="Notes about 3D python visualization packages." />
   <meta name="author" content="" />
   <meta name="generator" content="Hugo 0.62.0" />
   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Winding Notes Feed" />
@@ -37,56 +37,33 @@
   <div>
     <h2 class="post-title">
       
-      <a href="/notes/python-visualization/">Python Visualization</a>
+      Python Visualization
     </h2>
     
 
   </div>
   <div>
     <p>Notes about 3D python visualization packages.</p>
+<h2 id="mayavi">Mayavi</h2>
+<p>As of Jan 2020 the <a href="https://github.com/enthought/mayavi">mayavi repo</a> has 2,961 commits from 50 contributs. The repo is at least 11 years old.</p>
+<p>Mayavi relies on <a href="https://www.vtk.org/">VTK</a> and a gui toolkit, for python 3 you can use <a href="https://wiki.qt.io/Qt_for_Python">PySide2</a> or <a href="https://pypi.org/project/PyQt5/">PyQt5</a>.</p>
+<h2 id="vispy">Vispy</h2>
+<p>As of Jan 2020 the <a href="https://github.com/vispy/vispy">vispy repo</a> has 6,116
+commits from 102 contributors. It is at least 2 years old.</p>
+<p>Vispy relies on OpenGL. The setup.py file builds and embbeds js and css resources by leveraging npm.</p>
+<h2 id="glumpy">Glumpy</h2>
+<p>As of Jan 2020 the <a href="https://github.com/glumpy/glumpy">glumpy repo</a> had 791
+commits from 35 contributors over its 4 years of existence. Note that according to the vispy readme glumpy should have been integrated in vispy.</p>
+<p>Relies on <a href="http://pyopengl.sourceforge.net/">pyopengl</a>.</p>
+<p>Use <a href="https://docs.python.org/3/library/ctypes.html">ctypes</a> and
+<a href="https://cython.org/">cython</a> to load:</p>
+<ul>
+<li>ffmpeg</li>
+<li>sdf</li>
+<li>input hooks</li>
+</ul>
   </div>
 </div>
-<div>
-  <div>
-    <h2 class="post-title">
-      
-      <a href="/notes/pip/">Python Packages</a>
-    </h2>
-    
-
-  </div>
-  <div>
-    <p>The package manager in the python ecosystem is pip.</p>
-  </div>
-</div>
-<div>
-  <div>
-    <h2 class="post-title">
-      
-      <a href="/notes/pytorch-install/">Pytorch Install</a>
-    </h2>
-    
-
-  </div>
-  <div>
-    <p>Dependencies and steps through which Pytorch gets installed on your development machine.</p>
-  </div>
-</div>
-<div>
-  <div>
-    <h2 class="post-title">
-      
-      <a href="/notes/tf-install/">TensorFlow Install</a>
-    </h2>
-    
-
-  </div>
-  <div>
-    <p>Dependencies and steps through which Tensorflow (TF) gets installed on your development machine.</p>
-  </div>
-</div>
-
-
   <div class="footer">
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">

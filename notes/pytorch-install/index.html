@@ -49,13 +49,13 @@
 <a href="https://pytorch.org/get-started/locally/">instructions</a> and one options is to run:</p>
 <pre><code>$  pip install torch torchvision
 </code></pre><p>To learn more about pip see the <a href="https://winding-lines.github.io/notes/pip/">pip note</a>.</p>
-<h2 id="wheels-for-torch">wheels for torch</h2>
-<p>For python 3.7 Pytorch is provided through 2 <a href="https://pypi.org/project/tensorflow/#files">files</a>, one per operating system:</p>
+<h2 id="wheels-for-torch">Wheels for torch</h2>
+<p>For python 3.7 Pytorch is provided through 2 <a href="https://pypi.org/project/torch/#files">files</a>, one per operating system:</p>
 <ul>
 <li>torch-1.3.1-cp37-cp37m-manylinux1_x86_64.whl</li>
 <li>torch-1.3.1-cp37-none-macosx_10_7_x86_64.whl</li>
 </ul>
-<p>As opposed to TF there is no support wheel for windows.</p>
+<p>As opposed to TF there is no support wheel for windows. Also TF uses the newer manylinux2010 platform tag.</p>
 <h3 id="file-summary">File summary</h3>
 <p>This is a summary of the files in the macos wheel.</p>
 
@@ -192,6 +192,14 @@
   </tr>
 
 </table>
+
+
+<h3 id="outside-dependencies">Outside dependencies</h3>
+<p>As opposed to <a href="https://winding-lines.github.io/notes/tf-install/">TF</a>, Pytorch only has one external dependency.</p>
+<ul>
+<li>numpy</li>
+</ul>
+<p>Also CUDA support is provided in the base install.</p>
   </div>
 </div>
   <div class="footer">

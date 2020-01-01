@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>visualization on Winding Notes</title>
+		<link>https://winding-lines.github.io/tags/visualization/</link>
+		<description>Recent content in visualization on Winding Notes</description>
+		<generator>Hugo 0.62.0 -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Wed, 01 Jan 2020 06:31:59 -0800</lastBuildDate>
+		<atom:link href="https://winding-lines.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Python Visualization</title>
+			<link>https://winding-lines.github.io/notes/python-visualization/</link>
+			<pubDate>Wed, 01 Jan 2020 06:31:59 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/python-visualization/</guid>
+			<description>&lt;p&gt;Notes about 3D python visualization packages.&lt;/p&gt;
+&lt;h2 id=&#34;mayavi&#34;&gt;Mayavi&lt;/h2&gt;
+&lt;p&gt;As of Jan 2020 the &lt;a href=&#34;https://github.com/enthought/mayavi&#34;&gt;mayavi repo&lt;/a&gt; has 2,961 commits from 50 contributs. The repo is at least 11 years old.&lt;/p&gt;
+&lt;p&gt;Mayavi relies on &lt;a href=&#34;https://www.vtk.org/&#34;&gt;VTK&lt;/a&gt; and a gui toolkit, for python 3 you can use &lt;a href=&#34;https://wiki.qt.io/Qt_for_Python&#34;&gt;PySide2&lt;/a&gt; or &lt;a href=&#34;https://pypi.org/project/PyQt5/&#34;&gt;PyQt5&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;vispy&#34;&gt;Vispy&lt;/h2&gt;
+&lt;p&gt;As of Jan 2020 the &lt;a href=&#34;https://github.com/vispy/vispy&#34;&gt;vispy repo&lt;/a&gt; has 6,116
+commits from 102 contributors. It is at least 2 years old.&lt;/p&gt;
+&lt;p&gt;Vispy relies on OpenGL. The setup.py file builds and embbeds js and css resources by leveraging npm.&lt;/p&gt;
+&lt;h2 id=&#34;glumpy&#34;&gt;Glumpy&lt;/h2&gt;
+&lt;p&gt;As of Jan 2020 the &lt;a href=&#34;https://github.com/glumpy/glumpy&#34;&gt;glumpy repo&lt;/a&gt; had 791
+commits from 35 contributors over its 4 years of existence. Note that according to the vispy readme glumpy should have been integrated in vispy.&lt;/p&gt;
+&lt;p&gt;Relies on &lt;a href=&#34;http://pyopengl.sourceforge.net/&#34;&gt;pyopengl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Use &lt;a href=&#34;https://docs.python.org/3/library/ctypes.html&#34;&gt;ctypes&lt;/a&gt; and
+&lt;a href=&#34;https://cython.org/&#34;&gt;cython&lt;/a&gt; to load:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ffmpeg&lt;/li&gt;
+&lt;li&gt;sdf&lt;/li&gt;
+&lt;li&gt;input hooks&lt;/li&gt;
+&lt;/ul&gt;</description>
+		</item>
+	</channel>
+</rss>

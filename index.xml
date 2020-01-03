@@ -12,7 +12,8 @@
 			<link>https://winding-lines.github.io/notes/pointcloud/</link>
 			<pubDate>Thu, 02 Jan 2020 19:40:00 -0800</pubDate>
 			<guid isPermaLink="true">https://winding-lines.github.io/notes/pointcloud/</guid>
-			<description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34;&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
+			<description>&lt;p&gt;A point cloud is a set of data points in space.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34;&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;
 &lt;h3 id=&#34;pcl---point-cloud-library&#34;&gt;PCL - Point Cloud Library&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/PointCloudLibrary/pcl&#34;&gt;repo&lt;/a&gt;.&lt;/p&gt;
@@ -52,8 +53,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;
 &lt;p&gt;One of the algorithms implemented by PCL
-&lt;a href=&#34;http://www.robots.ox.ac.uk/~avsegal/resources/papers/Generalized_ICP.pdf&#34;&gt;Generalized_ICP&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;a href=&#34;http://www.robots.ox.ac.uk/~avsegal/resources/papers/Generalized_ICP.pdf&#34;&gt;Generalized_ICP&lt;/a&gt;&lt;/p&gt;</description>
 		</item>
 		<item>
 			<title>Python Visualization</title>

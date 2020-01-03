@@ -16,18 +16,25 @@
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34;&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;
 &lt;h3 id=&#34;pcl---point-cloud-library&#34;&gt;PCL - Point Cloud Library&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/PointCloudLibrary/pcl&#34;&gt;repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;repo: &lt;a href=&#34;https://github.com/PointCloudLibrary/pcl&#34;&gt;https://github.com/PointCloudLibrary/pcl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Dependencies:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[FLANN](&lt;a href=&#34;https://github.com/mariusmuja/flann&#34;&gt;https://github.com/mariusmuja/flann&lt;/a&gt; - Fast Library for Approximate Nearest Neighbor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mariusmuja/flann&#34;&gt;FLANN&lt;/a&gt; - Fast Library for Approximate Nearest Neighbor&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://vtk.org/&#34;&gt;VTK&lt;/a&gt; - manipulating and displaying scientific data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;transitive dependencies can be hard to install&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;cilantro&#34;&gt;Cilantro&lt;/h3&gt;
 &lt;p&gt;&amp;ldquo;A lean C++ library for working with point cloud data &amp;quot;&lt;/p&gt;
 &lt;p&gt;Links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;code: (&lt;a href=&#34;https://github.com/kzampog/cilantro):&#34;&gt;https://github.com/kzampog/cilantro):&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;code: &lt;a href=&#34;https://github.com/kzampog/cilantro&#34;&gt;https://github.com/kzampog/cilantro&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;technical report: (&lt;a href=&#34;https://arxiv.org/abs/1807.00399&#34;&gt;https://arxiv.org/abs/1807.00399&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Bundled dependencies:&lt;/p&gt;
@@ -48,12 +55,15 @@
 &lt;p&gt;&amp;ldquo;A modern library for 3D processing&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;site: (&lt;a href=&#34;http://www.open3d.org/):&#34;&gt;http://www.open3d.org/):&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;site: &lt;a href=&#34;http://www.open3d.org/&#34;&gt;http://www.open3d.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;repo: &lt;a href=&#34;https://github.com/intel-isl/Open3D&#34;&gt;https://github.com/intel-isl/Open3D&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;
-&lt;p&gt;One of the algorithms implemented by PCL
-&lt;a href=&#34;http://www.robots.ox.ac.uk/~avsegal/resources/papers/Generalized_ICP.pdf&#34;&gt;Generalized_ICP&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Iterative_closest_point&#34;&gt;Iterative Closest
+Point&lt;/a&gt; is one of the
+algorithms implemented by PCL
+&lt;a href=&#34;http://www.robots.ox.ac.uk/~avsegal/resources/papers/Generalized_ICP.pdf&#34;&gt;Generalized_ICP&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A related approach is &lt;a href=&#34;https://april.eecs.umich.edu/media/pdfs/olson2009icra.pdf&#34;&gt;Real time correlative scan matching&lt;/a&gt;&lt;/p&gt;</description>
 		</item>
 		<item>
 			<title>Python Visualization</title>

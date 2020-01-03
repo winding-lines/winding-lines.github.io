@@ -5,8 +5,56 @@
 		<description>Recent content on Winding Notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 01 Jan 2020 06:31:59 -0800</lastBuildDate>
+		<lastBuildDate>Thu, 02 Jan 2020 19:40:00 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Point cloud</title>
+			<link>https://winding-lines.github.io/notes/pointcloud/</link>
+			<pubDate>Thu, 02 Jan 2020 19:40:00 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/pointcloud/</guid>
+			<description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34;&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;
+&lt;h3 id=&#34;pcl---point-cloud-library&#34;&gt;PCL - Point Cloud Library&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PointCloudLibrary/pcl&#34;&gt;repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Dependencies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[FLANN](&lt;a href=&#34;https://github.com/mariusmuja/flann&#34;&gt;https://github.com/mariusmuja/flann&lt;/a&gt; - Fast Library for Approximate Nearest Neighbor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vtk.org/&#34;&gt;VTK&lt;/a&gt; - manipulating and displaying scientific data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cilantro&#34;&gt;Cilantro&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;A lean C++ library for working with point cloud data &amp;quot;&lt;/p&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;code: (&lt;a href=&#34;https://github.com/kzampog/cilantro):&#34;&gt;https://github.com/kzampog/cilantro):&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;technical report: (&lt;a href=&#34;https://arxiv.org/abs/1807.00399&#34;&gt;https://arxiv.org/abs/1807.00399&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bundled dependencies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jlblancoc/nanoflann&#34;&gt;nanoflann&lt;/a&gt; for general dimension kd-trees&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ddiakopoulos/tinyply&#34;&gt;tinyply&lt;/a&gt; for reading pointcloud data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.qhull.org/&#34;&gt;QHull&lt;/a&gt; for convex hull computation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yixuan/spectra&#34;&gt;Spectra&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Spectral_clustering&#34;&gt;spectral clustering&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;External dependencies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stevenlovegrove/Pangolin&#34;&gt;Pangolin&lt;/a&gt; for OpenGL display/interaction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pros: easy to compile&lt;/p&gt;
+&lt;p&gt;Cons: no python bindings?&lt;/p&gt;
+&lt;h3 id=&#34;open3d&#34;&gt;Open3d&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;A modern library for 3D processing&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;site: (&lt;a href=&#34;http://www.open3d.org/):&#34;&gt;http://www.open3d.org/):&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;repo: &lt;a href=&#34;https://github.com/intel-isl/Open3D&#34;&gt;https://github.com/intel-isl/Open3D&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;
+&lt;p&gt;One of the algorithms implemented by PCL
+&lt;a href=&#34;http://www.robots.ox.ac.uk/~avsegal/resources/papers/Generalized_ICP.pdf&#34;&gt;Generalized_ICP&lt;/a&gt;&lt;/p&gt;
+</description>
+		</item>
 		<item>
 			<title>Python Visualization</title>
 			<link>https://winding-lines.github.io/notes/python-visualization/</link>
@@ -61,7 +109,10 @@ commits from 35 contributors over its 4 years of existence. Note that according 
 &lt;p&gt;Complex packages like as ML frameworks have a lot of dependencies. In some cases it may be simpler to use a docker image, if provided by the developers, or &lt;a href=&#34;https://docs.conda.io/en/latest/&#34;&gt;conda&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;wheels&#34;&gt;Wheels&lt;/h2&gt;
 &lt;p&gt;When searching for &lt;code&gt;tensorflow&lt;/code&gt; on pypi you will see that the  have the extension &lt;code&gt;whl&lt;/code&gt;.
-These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;&lt;/p&gt;
+These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When building wheels for multiple linux architectures it can be beneficial to use &lt;a href=&#34;https://github.com/pypa/manylinux&#34;&gt;manylinux&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;setuptools&#34;&gt;Setuptools&lt;/h2&gt;
+&lt;p&gt;From &lt;a href=&#34;https://setuptools.readthedocs.io/en/latest/setuptools.html&#34;&gt;Read the docs&lt;/a&gt;: &amp;ldquo;Setuptools is a collection of enhancements to the Python distutils that allow developers to more easily build and distribute Python packages, especially ones that have dependencies on other packages.&amp;rdquo; The documentation page mentions that setuptools is used to build Python egg distributable which seems to be deprecated in favor of wheels.&lt;/p&gt;
 &lt;h2 id=&#34;binary-dependencies&#34;&gt;Binary dependencies&lt;/h2&gt;
 &lt;p&gt;Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:&lt;/p&gt;
 &lt;ul&gt;

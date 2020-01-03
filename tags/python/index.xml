@@ -36,7 +36,10 @@
 &lt;p&gt;Complex packages like as ML frameworks have a lot of dependencies. In some cases it may be simpler to use a docker image, if provided by the developers, or &lt;a href=&#34;https://docs.conda.io/en/latest/&#34;&gt;conda&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;wheels&#34;&gt;Wheels&lt;/h2&gt;
 &lt;p&gt;When searching for &lt;code&gt;tensorflow&lt;/code&gt; on pypi you will see that the  have the extension &lt;code&gt;whl&lt;/code&gt;.
-These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;&lt;/p&gt;
+These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&lt;/a&gt; files, zip files with a custom extension and are defined in &lt;a href=&#34;https://www.python.org/dev/peps/pep-0427/&#34;&gt;PEP-0427&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When building wheels for multiple linux architectures it can be beneficial to use &lt;a href=&#34;https://github.com/pypa/manylinux&#34;&gt;manylinux&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;setuptools&#34;&gt;Setuptools&lt;/h2&gt;
+&lt;p&gt;From &lt;a href=&#34;https://setuptools.readthedocs.io/en/latest/setuptools.html&#34;&gt;Read the docs&lt;/a&gt;: &amp;ldquo;Setuptools is a collection of enhancements to the Python distutils that allow developers to more easily build and distribute Python packages, especially ones that have dependencies on other packages.&amp;rdquo; The documentation page mentions that setuptools is used to build Python egg distributable which seems to be deprecated in favor of wheels.&lt;/p&gt;
 &lt;h2 id=&#34;binary-dependencies&#34;&gt;Binary dependencies&lt;/h2&gt;
 &lt;p&gt;Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:&lt;/p&gt;
 &lt;ul&gt;

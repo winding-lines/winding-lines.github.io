@@ -67,7 +67,10 @@
 <p>Complex packages like as ML frameworks have a lot of dependencies. In some cases it may be simpler to use a docker image, if provided by the developers, or <a href="https://docs.conda.io/en/latest/">conda</a>.</p>
 <h2 id="wheels">Wheels</h2>
 <p>When searching for <code>tensorflow</code> on pypi you will see that the  have the extension <code>whl</code>.
-These are <a href="https://wheel.readthedocs.io/en/stable/">wheel</a> files, zip files with a custom extension and are defined in <a href="https://www.python.org/dev/peps/pep-0427/">PEP-0427</a></p>
+These are <a href="https://wheel.readthedocs.io/en/stable/">wheel</a> files, zip files with a custom extension and are defined in <a href="https://www.python.org/dev/peps/pep-0427/">PEP-0427</a>.</p>
+<p>When building wheels for multiple linux architectures it can be beneficial to use <a href="https://github.com/pypa/manylinux">manylinux</a>.</p>
+<h2 id="setuptools">Setuptools</h2>
+<p>From <a href="https://setuptools.readthedocs.io/en/latest/setuptools.html">Read the docs</a>: &ldquo;Setuptools is a collection of enhancements to the Python distutils that allow developers to more easily build and distribute Python packages, especially ones that have dependencies on other packages.&rdquo; The documentation page mentions that setuptools is used to build Python egg distributable which seems to be deprecated in favor of wheels.</p>
 <h2 id="binary-dependencies">Binary dependencies</h2>
 <p>Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:</p>
 <ul>

@@ -77,6 +77,10 @@
 &lt;li&gt;repo: &lt;a href=&#34;https://github.com/intel-isl/Open3D&#34;&gt;https://github.com/intel-isl/Open3D&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;intro: &lt;a href=&#34;http://www.open3d.org/docs/release/tutorial/Basic/pointcloud.html&#34;&gt;http://www.open3d.org/docs/release/tutorial/Basic/pointcloud.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Cons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;does not seem to have an implementation of Generalized ICP.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Iterative_closest_point&#34;&gt;Iterative Closest
 Point&lt;/a&gt; is one of the

@@ -12,7 +12,9 @@
 			<link>https://winding-lines.github.io/notes/cuda/</link>
 			<pubDate>Fri, 03 Jan 2020 05:19:15 -0800</pubDate>
 			<guid isPermaLink="true">https://winding-lines.github.io/notes/cuda/</guid>
-			<description>&lt;p&gt;AI related&lt;/p&gt;
+			<description>&lt;p&gt;&amp;ldquo;CUDA (Compute Unified Device Architecture) is a parallel computing platform
+and application programming interface (API) model created by Nvidia&amp;rdquo;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/CUDA&#34;&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://developer.nvidia.com/cudnn&#34;&gt;cudnn&lt;/a&gt; GPU-accelerated library of primitives for deep neural networks&lt;/p&gt;
@@ -23,8 +25,7 @@
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/NVIDIA/apex&#34;&gt;apex&lt;/a&gt;: a pytorch extension for mixed precision and distributed training&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
 		</item>
 	</channel>
 </rss>

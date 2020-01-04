@@ -5,15 +5,33 @@
 		<description>Recent content in Notes on Winding Notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Thu, 02 Jan 2020 19:40:00 -0800</lastBuildDate>
+		<lastBuildDate>Fri, 03 Jan 2020 05:19:15 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Cuda</title>
+			<link>https://winding-lines.github.io/notes/cuda/</link>
+			<pubDate>Fri, 03 Jan 2020 05:19:15 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/cuda/</guid>
+			<description>&lt;p&gt;AI related&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.nvidia.com/cudnn&#34;&gt;cudnn&lt;/a&gt; GPU-accelerated library of primitives for deep neural networks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.nvidia.com/cublas&#34;&gt;cublas&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/NVIDIA/apex&#34;&gt;apex&lt;/a&gt;: a pytorch extension for mixed precision and distributed training&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+		</item>
 		<item>
 			<title>Point cloud</title>
 			<link>https://winding-lines.github.io/notes/pointcloud/</link>
 			<pubDate>Thu, 02 Jan 2020 19:40:00 -0800</pubDate>
 			<guid isPermaLink="true">https://winding-lines.github.io/notes/pointcloud/</guid>
-			<description>&lt;p&gt;A point cloud is a set of data points in space.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34;&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
+			<description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34;&gt;point cloud&lt;/a&gt; is a set of data points in space.&lt;/p&gt;
 &lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;
 &lt;h3 id=&#34;pcl---point-cloud-library&#34;&gt;PCL - Point Cloud Library&lt;/h3&gt;
 &lt;p&gt;Links:&lt;/p&gt;
@@ -57,6 +75,7 @@
 &lt;ul&gt;
 &lt;li&gt;site: &lt;a href=&#34;http://www.open3d.org/&#34;&gt;http://www.open3d.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;repo: &lt;a href=&#34;https://github.com/intel-isl/Open3D&#34;&gt;https://github.com/intel-isl/Open3D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;intro: &lt;a href=&#34;http://www.open3d.org/docs/release/tutorial/Basic/pointcloud.html&#34;&gt;http://www.open3d.org/docs/release/tutorial/Basic/pointcloud.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Iterative_closest_point&#34;&gt;Iterative Closest
@@ -127,7 +146,8 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;p&gt;Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/library/ctypes.html&#34;&gt;ctypes&lt;/a&gt; - loads shared libraries using the Foreing Function Interface (FFI)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cython.org/&#34;&gt;cython&lt;/a&gt; -  optimising static compiler for both the Python programming language and the extended Cython programming language.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cython.org/&#34;&gt;cython&lt;/a&gt; -  optimising static compiler for both the Python programming language and the extended Cython programming language&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pybind/pybind11&#34;&gt;pybind11&lt;/a&gt; - seamless operability between C++11 and Python&lt;/li&gt;
 &lt;/ul&gt;</description>
 		</item>
 		<item>

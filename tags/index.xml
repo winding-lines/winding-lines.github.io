@@ -5,8 +5,15 @@
 		<description>Recent content in Tags on Winding Notes</description>
 		<generator>Hugo 0.62.0 -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Thu, 02 Jan 2020 19:40:00 -0800</lastBuildDate>
+		<lastBuildDate>Fri, 03 Jan 2020 05:19:15 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>ai,gpu</title>
+			<link>https://winding-lines.github.io/tags/aigpu/</link>
+			<pubDate>Fri, 03 Jan 2020 05:19:15 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/tags/aigpu/</guid>
+			<description></description>
+		</item>
 		<item>
 			<title>AV</title>
 			<link>https://winding-lines.github.io/tags/av/</link>

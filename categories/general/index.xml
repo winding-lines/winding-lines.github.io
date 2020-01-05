@@ -49,6 +49,7 @@ and application programming interface (API) model created by Nvidia&amp;rdquo;
 &lt;ul&gt;
 &lt;li&gt;transitive dependencies can be hard to install&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;See an example &lt;a href=&#34;https://gist.github.com/winding-lines/2d61189226df8193eeec4669b57d764d&#34;&gt;Dockerfile&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;cilantro&#34;&gt;Cilantro&lt;/h3&gt;
 &lt;p&gt;&amp;ldquo;A lean C++ library for working with point cloud data &amp;quot;&lt;/p&gt;
 &lt;p&gt;Links:&lt;/p&gt;

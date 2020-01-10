@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="The package manager in the python ecosystem is pip." />
   <meta name="author" content="" />
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.62.2" />
   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Winding Notes Feed" />
   <!--[if lte IE 8]>
   <link rel="stylesheet" href="/style-compat.3b4c1c0e1409a3519991e0e9c30ec8480a88f23885a0beb2a2ca30ece5c7d42c.css" />
@@ -71,12 +71,17 @@ These are <a href="https://wheel.readthedocs.io/en/stable/">wheel</a> files, zip
 <p>When building wheels for multiple linux architectures it can be beneficial to use <a href="https://github.com/pypa/manylinux">manylinux</a>.</p>
 <h2 id="setuptools">Setuptools</h2>
 <p>From <a href="https://setuptools.readthedocs.io/en/latest/setuptools.html">Read the docs</a>: &ldquo;Setuptools is a collection of enhancements to the Python distutils that allow developers to more easily build and distribute Python packages, especially ones that have dependencies on other packages.&rdquo; The documentation page mentions that setuptools is used to build Python egg distributable which seems to be deprecated in favor of wheels.</p>
-<h2 id="binary-dependencies">Binary dependencies</h2>
+<h2 id="going-native">Going native</h2>
 <p>Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:</p>
 <ul>
 <li><a href="https://docs.python.org/3/library/ctypes.html">ctypes</a> - loads shared libraries using the Foreing Function Interface (FFI)</li>
 <li><a href="https://cython.org/">cython</a> -  optimising static compiler for both the Python programming language and the extended Cython programming language</li>
 <li><a href="https://github.com/pybind/pybind11">pybind11</a> - seamless operability between C++11 and Python</li>
+<li><a href="http://numba.pydata.org/numba-doc/latest/index.html">numba</a>
+<ul>
+<li><a href="http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html">http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html</a></li>
+</ul>
+</li>
 </ul>
   </div>
 </div>

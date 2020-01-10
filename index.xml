@@ -3,7 +3,7 @@
 		<title>Winding Notes</title>
 		<link>https://winding-lines.github.io/</link>
 		<description>Recent content on Winding Notes</description>
-		<generator>Hugo 0.62.0 -- gohugo.io</generator>
+		<generator>Hugo 0.62.2 -- gohugo.io</generator>
 		<language>en-us</language>
 		<lastBuildDate>Fri, 03 Jan 2020 19:32:47 -0800</lastBuildDate>
 		<atom:link href="https://winding-lines.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -27,7 +27,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/OpenMP&#34;&gt;OpenMP&lt;/a&gt;: application programming interface (API) that supports multi-platform shared memory multiprocessing programming in C, C++, and Fortran, on many platforms&lt;/p&gt;
+&lt;p&gt;[OpenMP]:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/OpenMP&#34;&gt;wikipedia&lt;/a&gt;: application programming interface (API) that supports multi-platform shared memory multiprocessing programming in C, C++, and Fortran, on many platforms&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://software.intel.com/en-us/articles/getting-started-with-openmp&#34;&gt;intel&#39;s guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
 		</item>
@@ -178,12 +182,17 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;p&gt;When building wheels for multiple linux architectures it can be beneficial to use &lt;a href=&#34;https://github.com/pypa/manylinux&#34;&gt;manylinux&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;setuptools&#34;&gt;Setuptools&lt;/h2&gt;
 &lt;p&gt;From &lt;a href=&#34;https://setuptools.readthedocs.io/en/latest/setuptools.html&#34;&gt;Read the docs&lt;/a&gt;: &amp;ldquo;Setuptools is a collection of enhancements to the Python distutils that allow developers to more easily build and distribute Python packages, especially ones that have dependencies on other packages.&amp;rdquo; The documentation page mentions that setuptools is used to build Python egg distributable which seems to be deprecated in favor of wheels.&lt;/p&gt;
-&lt;h2 id=&#34;binary-dependencies&#34;&gt;Binary dependencies&lt;/h2&gt;
+&lt;h2 id=&#34;going-native&#34;&gt;Going native&lt;/h2&gt;
 &lt;p&gt;Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/library/ctypes.html&#34;&gt;ctypes&lt;/a&gt; - loads shared libraries using the Foreing Function Interface (FFI)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cython.org/&#34;&gt;cython&lt;/a&gt; -  optimising static compiler for both the Python programming language and the extended Cython programming language&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pybind/pybind11&#34;&gt;pybind11&lt;/a&gt; - seamless operability between C++11 and Python&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://numba.pydata.org/numba-doc/latest/index.html&#34;&gt;numba&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html&#34;&gt;http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
 		</item>
 		<item>

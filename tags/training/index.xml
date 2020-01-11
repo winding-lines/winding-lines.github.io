@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>training on Winding Notes</title>
+		<link>https://winding-lines.github.io/tags/training/</link>
+		<description>Recent content in training on Winding Notes</description>
+		<generator>Hugo 0.62.2 -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Sat, 11 Jan 2020 06:35:00 -0800</lastBuildDate>
+		<atom:link href="https://winding-lines.github.io/tags/training/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Distributed Training</title>
+			<link>https://winding-lines.github.io/notes/distributed-training/</link>
+			<pubDate>Sat, 11 Jan 2020 06:35:00 -0800</pubDate>
+			<guid isPermaLink="true">https://winding-lines.github.io/notes/distributed-training/</guid>
+			<description>&lt;p&gt;Frameworks and libraries for distributed training&lt;/p&gt;
+&lt;p&gt;Overview from &lt;a href=&#34;https://lambdalabs.com/blog/introduction-multi-gpu-multi-node-distributed-training-nccl-2-0/&#34;&gt;lambdalabs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;multi gpu using parameter server: reduce and broadcast done on CPU&lt;/li&gt;
+&lt;li&gt;multi gpu all-reduce in one one, using nccl&lt;/li&gt;
+&lt;li&gt;asynchronous distributed SGD&lt;/li&gt;
+&lt;li&gt;synchronous distributed SGD&lt;/li&gt;
+&lt;li&gt;multiple parameter servers&lt;/li&gt;
+&lt;li&gt;ring all reduce distributed training&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;low-level&#34;&gt;Low level&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.nvidia.com/gpudirect&#34;&gt;gpudirect&lt;/a&gt; from nvidia&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2019 Storage: from/to NVMe devices&lt;/li&gt;
+&lt;li&gt;2013 RMDA: from/to network&lt;/li&gt;
+&lt;li&gt;2011 GPU Peer to Peer: high speed DMA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;frameworks&#34;&gt;Frameworks&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tensorflow&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tensorflow.org/guide/distributed_training&#34;&gt;distributed training&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/horovod/horovod&#34;&gt;Horovod&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/1802.05799.pdf&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;part of &lt;a href=&#34;https://lfai.foundation/&#34;&gt;LF AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;synchronous operation&lt;/li&gt;
+&lt;/ul&gt;</description>
+		</item>
+	</channel>
+</rss>

@@ -62,6 +62,47 @@ commits from 35 contributors over its 4 years of existence. Note that according 
 <li>sdf</li>
 <li>input hooks</li>
 </ul>
+<h2 id="ipywidgets">ipywidgets</h2>
+<p>Some of these are integrated with <a href="https://ipywidgets.readthedocs.io/en/latest/index.html">ipywidgets</a>.</p>
+<p>Install and debub courtesy of <a href="https://github.com/maartenbreddels/ipyvolume/issues/102#issuecomment-358641450">ipyvolume issue#102</a></p>
+<p>Install steps from fresh venv creation, less may be needed</p>
+<pre><code>pip install jupyter
+pip install jupyterlab
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter lab --no-browser
+</code></pre><p>Debug from command line</p>
+<pre><code>jupyter labextension list
+</code></pre><p>Debug in notebook</p>
+<pre><code>import ipywidgets
+ipywidgets.FloatSlider()
+</code></pre><h2 id="ipyvolume">ipyvolume</h2>
+<ul>
+<li>docs: <a href="https://ipyvolume.readthedocs.io/en/latest/index.html">https://ipyvolume.readthedocs.io/en/latest/index.html</a></li>
+<li>github: <a href="https://github.com/maartenbreddels/ipyvolume">https://github.com/maartenbreddels/ipyvolume</a></li>
+<li>SciPy 2018 presentation: <a href="https://www.youtube.com/watch?v=hOKa8klJPyo">https://www.youtube.com/watch?v=hOKa8klJPyo</a></li>
+</ul>
+<h2 id="other">Other</h2>
+<ul>
+<li>
+<p><a href="http://yt-project.org/">yt</a></p>
+</li>
+<li>
+<p><a href="https://github.com/plotly/plotly.py">plotly</a> ()</p>
+</li>
+<li>
+<p><a href="https://github.com/banesullivan/itk-jupyter-widgets">itk-jupyter-widgets</a></p>
+</li>
+<li>
+<p><a href="https://github.com/K3D-tools/K3D-jupyter">K3D-jupyter</a></p>
+</li>
+<li>
+<p><a href="https://github.com/jupyter-widgets/pythreejs">pytreejs</a> (ipywidgets)</p>
+<ul>
+<li>A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.</li>
+<li>scene graph library</li>
+</ul>
+</li>
+</ul>
   </div>
 </div>
   <div class="footer">

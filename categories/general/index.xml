@@ -64,9 +64,9 @@ and application programming interface (API) model created by Nvidia&amp;rdquo;
 		</item>
 		<item>
 			<title>Point cloud</title>
-			<link>https://winding-lines.github.io/notes/pointcloud/</link>
+			<link>https://winding-lines.github.io/robotics/pointcloud/</link>
 			<pubDate>Thu, 02 Jan 2020 19:40:00 -0800</pubDate>
-			<guid isPermaLink="true">https://winding-lines.github.io/notes/pointcloud/</guid>
+			<guid isPermaLink="true">https://winding-lines.github.io/robotics/pointcloud/</guid>
 			<description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34;&gt;point cloud&lt;/a&gt; is a set of data points in space.&lt;/p&gt;
 &lt;h2 id=&#34;libraries&#34;&gt;Libraries&lt;/h2&gt;
 &lt;h3 id=&#34;pcl---point-cloud-library&#34;&gt;PCL - Point Cloud Library&lt;/h3&gt;
@@ -129,7 +129,9 @@ algorithms implemented by PCL
 &lt;li&gt;pcd: &lt;a href=&#34;http://pointclouds.org/documentation/tutorials/pcd_file_format.php&#34;&gt;http://pointclouds.org/documentation/tutorials/pcd_file_format.php&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;ply: &lt;a href=&#34;https://en.wikipedia.org/wiki/PLY_(file_format)&#34;&gt;https://en.wikipedia.org/wiki/PLY_(file_format)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;stl: &lt;a href=&#34;https://en.wikipedia.org/wiki/STL_(file_format)&#34;&gt;https://en.wikipedia.org/wiki/STL_(file_format)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+&lt;h2 id=&#34;competitions-datasets&#34;&gt;Competitions datasets&lt;/h2&gt;
+&lt;p&gt;Multiple Object Tracking Benchmark: &lt;a href=&#34;https://motchallenge.net/&#34;&gt;https://motchallenge.net/&lt;/a&gt;&lt;/p&gt;</description>
 		</item>
 		<item>
 			<title>Python Visualization</title>
@@ -154,6 +156,47 @@ commits from 35 contributors over its 4 years of existence. Note that according 
 &lt;li&gt;ffmpeg&lt;/li&gt;
 &lt;li&gt;sdf&lt;/li&gt;
 &lt;li&gt;input hooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ipywidgets&#34;&gt;ipywidgets&lt;/h2&gt;
+&lt;p&gt;Some of these are integrated with &lt;a href=&#34;https://ipywidgets.readthedocs.io/en/latest/index.html&#34;&gt;ipywidgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Install and debub courtesy of &lt;a href=&#34;https://github.com/maartenbreddels/ipyvolume/issues/102#issuecomment-358641450&#34;&gt;ipyvolume issue#102&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Install steps from fresh venv creation, less may be needed&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install jupyter
+pip install jupyterlab
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter lab --no-browser
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Debug from command line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;jupyter labextension list
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Debug in notebook&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import ipywidgets
+ipywidgets.FloatSlider()
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;ipyvolume&#34;&gt;ipyvolume&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: &lt;a href=&#34;https://ipyvolume.readthedocs.io/en/latest/index.html&#34;&gt;https://ipyvolume.readthedocs.io/en/latest/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;github: &lt;a href=&#34;https://github.com/maartenbreddels/ipyvolume&#34;&gt;https://github.com/maartenbreddels/ipyvolume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SciPy 2018 presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=hOKa8klJPyo&#34;&gt;https://www.youtube.com/watch?v=hOKa8klJPyo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://yt-project.org/&#34;&gt;yt&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/plotly/plotly.py&#34;&gt;plotly&lt;/a&gt; ()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/banesullivan/itk-jupyter-widgets&#34;&gt;itk-jupyter-widgets&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/K3D-tools/K3D-jupyter&#34;&gt;K3D-jupyter&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jupyter-widgets/pythreejs&#34;&gt;pytreejs&lt;/a&gt; (ipywidgets)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.&lt;/li&gt;
+&lt;li&gt;scene graph library&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
 		</item>
 		<item>
@@ -192,12 +235,15 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;h2 id=&#34;going-native&#34;&gt;Going native&lt;/h2&gt;
 &lt;p&gt;Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/extending/extending.html&#34;&gt;cpython c extension&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/library/ctypes.html&#34;&gt;ctypes&lt;/a&gt; - loads shared libraries using the Foreing Function Interface (FFI)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cffi.readthedocs.io/en/latest/index.html&#34;&gt;cffi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cython.org/&#34;&gt;cython&lt;/a&gt; -  optimising static compiler for both the Python programming language and the extended Cython programming language&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pybind/pybind11&#34;&gt;pybind11&lt;/a&gt; - seamless operability between C++11 and Python&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://numba.pydata.org/numba-doc/latest/index.html&#34;&gt;numba&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html&#34;&gt;http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;relies on &lt;a href=&#34;https://pypi.org/project/llvmlite/&#34;&gt;llvmlite&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -530,7 +576,9 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;li&gt;wheel (&amp;gt;=0.26)&lt;/li&gt;
 &lt;li&gt;backports.weakref (&amp;gt;=1.0rc1); python_version &amp;lt; &amp;ldquo;3.4&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;enum34 (&amp;gt;=1.1.6); python_version &amp;lt; &amp;ldquo;3.4&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+&lt;h2 id=&#34;related&#34;&gt;Related&lt;/h2&gt;
+&lt;p&gt;Tensorflow internals: &lt;a href=&#34;https://github.com/horance-liu/tensorflow-internals&#34;&gt;https://github.com/horance-liu/tensorflow-internals&lt;/a&gt;&lt;/p&gt;</description>
 		</item>
 	</channel>
 </rss>

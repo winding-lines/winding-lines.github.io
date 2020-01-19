@@ -74,12 +74,15 @@ These are <a href="https://wheel.readthedocs.io/en/stable/">wheel</a> files, zip
 <h2 id="going-native">Going native</h2>
 <p>Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:</p>
 <ul>
+<li><a href="https://docs.python.org/3/extending/extending.html">cpython c extension</a></li>
 <li><a href="https://docs.python.org/3/library/ctypes.html">ctypes</a> - loads shared libraries using the Foreing Function Interface (FFI)</li>
+<li><a href="https://cffi.readthedocs.io/en/latest/index.html">cffi</a></li>
 <li><a href="https://cython.org/">cython</a> -  optimising static compiler for both the Python programming language and the extended Cython programming language</li>
 <li><a href="https://github.com/pybind/pybind11">pybind11</a> - seamless operability between C++11 and Python</li>
 <li><a href="http://numba.pydata.org/numba-doc/latest/index.html">numba</a>
 <ul>
 <li><a href="http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html">http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html</a></li>
+<li>relies on <a href="https://pypi.org/project/llvmlite/">llvmlite</a></li>
 </ul>
 </li>
 </ul>

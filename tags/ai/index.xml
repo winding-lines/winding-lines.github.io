@@ -335,7 +335,9 @@
 &lt;li&gt;wheel (&amp;gt;=0.26)&lt;/li&gt;
 &lt;li&gt;backports.weakref (&amp;gt;=1.0rc1); python_version &amp;lt; &amp;ldquo;3.4&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;enum34 (&amp;gt;=1.1.6); python_version &amp;lt; &amp;ldquo;3.4&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+&lt;h2 id=&#34;related&#34;&gt;Related&lt;/h2&gt;
+&lt;p&gt;Tensorflow internals: &lt;a href=&#34;https://github.com/horance-liu/tensorflow-internals&#34;&gt;https://github.com/horance-liu/tensorflow-internals&lt;/a&gt;&lt;/p&gt;</description>
 		</item>
 	</channel>
 </rss>

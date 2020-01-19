@@ -30,6 +30,47 @@ commits from 35 contributors over its 4 years of existence. Note that according 
 &lt;li&gt;ffmpeg&lt;/li&gt;
 &lt;li&gt;sdf&lt;/li&gt;
 &lt;li&gt;input hooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ipywidgets&#34;&gt;ipywidgets&lt;/h2&gt;
+&lt;p&gt;Some of these are integrated with &lt;a href=&#34;https://ipywidgets.readthedocs.io/en/latest/index.html&#34;&gt;ipywidgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Install and debub courtesy of &lt;a href=&#34;https://github.com/maartenbreddels/ipyvolume/issues/102#issuecomment-358641450&#34;&gt;ipyvolume issue#102&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Install steps from fresh venv creation, less may be needed&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install jupyter
+pip install jupyterlab
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter lab --no-browser
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Debug from command line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;jupyter labextension list
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Debug in notebook&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import ipywidgets
+ipywidgets.FloatSlider()
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;ipyvolume&#34;&gt;ipyvolume&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: &lt;a href=&#34;https://ipyvolume.readthedocs.io/en/latest/index.html&#34;&gt;https://ipyvolume.readthedocs.io/en/latest/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;github: &lt;a href=&#34;https://github.com/maartenbreddels/ipyvolume&#34;&gt;https://github.com/maartenbreddels/ipyvolume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SciPy 2018 presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=hOKa8klJPyo&#34;&gt;https://www.youtube.com/watch?v=hOKa8klJPyo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://yt-project.org/&#34;&gt;yt&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/plotly/plotly.py&#34;&gt;plotly&lt;/a&gt; ()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/banesullivan/itk-jupyter-widgets&#34;&gt;itk-jupyter-widgets&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/K3D-tools/K3D-jupyter&#34;&gt;K3D-jupyter&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jupyter-widgets/pythreejs&#34;&gt;pytreejs&lt;/a&gt; (ipywidgets)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A Python / ThreeJS bridge utilizing the Jupyter widget infrastructure.&lt;/li&gt;
+&lt;li&gt;scene graph library&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
 		</item>
 	</channel>

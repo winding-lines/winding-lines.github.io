@@ -43,12 +43,15 @@ These are &lt;a href=&#34;https://wheel.readthedocs.io/en/stable/&#34;&gt;wheel&
 &lt;h2 id=&#34;going-native&#34;&gt;Going native&lt;/h2&gt;
 &lt;p&gt;Some of the python magic is achieved through binary dependencies. Some of the tools used to bring those in the interpreter are:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/extending/extending.html&#34;&gt;cpython c extension&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/library/ctypes.html&#34;&gt;ctypes&lt;/a&gt; - loads shared libraries using the Foreing Function Interface (FFI)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cffi.readthedocs.io/en/latest/index.html&#34;&gt;cffi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cython.org/&#34;&gt;cython&lt;/a&gt; -  optimising static compiler for both the Python programming language and the extended Cython programming language&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pybind/pybind11&#34;&gt;pybind11&lt;/a&gt; - seamless operability between C++11 and Python&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://numba.pydata.org/numba-doc/latest/index.html&#34;&gt;numba&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html&#34;&gt;http://gouthamanbalaraman.com/blog/optimizing-python-numba-vs-cython.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;relies on &lt;a href=&#34;https://pypi.org/project/llvmlite/&#34;&gt;llvmlite&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>

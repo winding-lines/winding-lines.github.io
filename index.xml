@@ -170,8 +170,6 @@ Point&lt;/a&gt; is one of the
 algorithms implemented by PCL
 &lt;a href=&#34;http://www.robots.ox.ac.uk/~avsegal/resources/papers/Generalized_ICP.pdf&#34;&gt;Generalized_ICP&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A related approach is &lt;a href=&#34;https://april.eecs.umich.edu/media/pdfs/olson2009icra.pdf&#34;&gt;Real time correlative scan matching&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;papers&#34;&gt;Papers&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://paperswithcode.com/task/3d-object-detection/codeless&#34;&gt;https://paperswithcode.com/task/3d-object-detection/codeless&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;data-formats&#34;&gt;Data formats&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;pcd: &lt;a href=&#34;http://pointclouds.org/documentation/tutorials/pcd_file_format.php&#34;&gt;http://pointclouds.org/documentation/tutorials/pcd_file_format.php&lt;/a&gt;&lt;/li&gt;
